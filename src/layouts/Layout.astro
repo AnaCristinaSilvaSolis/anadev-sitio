@@ -1,0 +1,24 @@
+---
+interface IProps {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+import '../styles/layout.css';
+---
+
+<!doctype html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Ana De - {title}</title>
+  </head>
+
+  <body class='bg-gray-100'>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

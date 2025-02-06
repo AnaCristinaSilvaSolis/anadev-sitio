@@ -1,0 +1,24 @@
+---
+import features from '../../config/features.json';
+---
+
+<h2 class='text-center font-bold text-5xl m-10' id='feature'>
+  Características
+</h2>
+<div class='grid md:grid-cols-3 gap-4 p-4'>
+  {
+    features.map((feature) => (
+      <dl>
+        <div class='relative pl-16'>
+          <dt class='text-base/7 font-semibold text-gray-900'>
+            <div class='absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-blue-800'>
+              <i class='fa-solid fa-code' />
+            </div>
+            {feature.title}
+          </dt>
+          <dd class='mt-2 text-base/7 text-gray-600'>{feature.description}</dd>
+        </div>
+      </dl>
+    ))
+  }
+</div>

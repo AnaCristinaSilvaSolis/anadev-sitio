@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Integración de Sistemas y APIs",
+    "description": "Conectamos tus sistemas existentes con nuevas plataformas o aplicaciones mediante APIs personalizadas. Facilitamos la comunicación entre herramientas para que tu negocio funcione de manera más eficiente y automatizada."
+  },
+  {
+    "name": "Desarrollo de Aplicaciones Web",
+    "description": "Creamos aplicaciones web a la medida de tus necesidades. Desde un blog personal hasta un sistema de gestión empresarial, nos adaptamos a tus requerimientos para ofrecerte una solución que se ajuste a tu presupuesto y tiempo."
+  },
+  {
+    "name": "Optimización y Rediseño de Sitios Web",
+    "description": "¿Tu página web necesita una actualización? Mejoramos el diseño, la velocidad y la funcionalidad de tu sitio existente para que sea más atractivo, rápido y compatible con dispositivos móviles. Además, optimizamos el SEO para aumentar tu visibilidad en buscadores."
+  },
+  {
+    "name": "Consultoría en Tecnología",
+    "description": "Te asesoramos en la implementación de soluciones tecnológicas que impulsen el crecimiento de tu negocio. Analizamos tus procesos internos y te recomendamos las herramientas y estrategias más adecuadas para alcanzar tus objetivos."
+  },
+  {
+    "name": "Desarrollo de APIs Personalizadas",
+    "description": "Creamos APIs robustas y seguras que permiten la integración de tus sistemas con terceros, facilitando el intercambio de datos y la interoperabilidad entre aplicaciones."
+  }
+]

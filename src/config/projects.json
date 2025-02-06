@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Blog de Café",
+    "description": "En este blog se pueden encontrar recetas, tips y recomendaciones para disfrutar de una buena taza de café.",
+    "image": "/images/blogCafe.png",
+    "url": "https://anacristinasilvasolis.github.io/BLOG_CAFE/"
+  },
+  {
+    "name": "Kaliman Barber",
+    "description": "Sitio web de una barbería, donde se pueden encontrar los servicios que ofrecen, así como la ubicación y horarios.",
+    "image": "/images/kaliman.png",
+    "url": "https://sark-kb.netlify.app/"
+  }
+]
