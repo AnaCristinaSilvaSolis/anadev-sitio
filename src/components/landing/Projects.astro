@@ -1,23 +1,25 @@
 ---
-import projects from '../../config/projects.json';
+import projects from "../../config/projects.json";
 ---
 
-<h2 class='font-bold text-5xl my-5 text-center' id='project'>Proyectos</h2>
-<section class='grid md:grid-cols-3 gap-4 p-4'>
+<h2 class="font-bold text-5xl my-5 text-center" id="project">Proyectos</h2>
+<section class="grid md:grid-cols-3 gap-4 p-4">
   {
     projects.map((project) => (
-      <div class='max-w-sm rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-300 hover:scale-105 hover:shadow-2xl'>
-        <img class='w-full' src={project.image} alt={project.name} />
-        <div class='px-6 py-4'>
-          <div class='font-bold text-xl mb-2'>{project.name}</div>
-          <p class='text-gray-700 text-base'>{project.description}</p>
+      <div class="max-w-sm flex flex-col justify-between rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-300 hover:scale-105 hover:shadow-2xl mb-5">
+        <div>
+          <img class="w-full h-auto" src={project.image} alt={project.name} />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">{project.name}</div>
+            <p class="text-gray-700 text-base">{project.description}</p>
+          </div>
         </div>
-        <div class='px-6 pt-4 pb-2'>
+        <div class="px-6 pt-4 pb-6 mt-auto">
           <a
-            target='_blank'
-            rel='noopener noreferrer'
+            target="_blank"
+            rel="noopener noreferrer"
             href={project.url}
-            class='inline-block bg-blue-900 hover:bg-blue-600 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2'
+            class="inline-block bg-blue-900 hover:bg-blue-600 rounded-full px-3 py-1 text-sm font-semibold text-white"
           >
             Ir al sitio
           </a>
