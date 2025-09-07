@@ -8,3 +8,7 @@ body {
 .form-class {
   box-shadow: #1c398e 0px 0px 10px;
 }
+
+html {
+  scroll-behavior: smooth;
+}

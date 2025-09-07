@@ -1,0 +1,73 @@
+---
+
+---
+
+<header
+  class='fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50'
+>
+  <nav class='container mx-auto flex justify-between items-center py-4 px-6'>
+    <!-- Logo -->
+    <a href='/' class='text-2xl font-bold text-blue-600'>Anadev</a>
+
+    <!-- Menú Desktop -->
+    <ul class='hidden md:flex space-x-8 text-gray-700 font-medium'>
+      <li><a href='#services' class='hover:text-blue-600'>Servicios</a></li>
+      <li>
+        <a href='#feature' class='hover:text-blue-600'>Características</a>
+      </li>
+      <li><a href='#about' class='hover:text-blue-600'>Sobre Nosotros</a></li>
+      <li><a href='#project' class='hover:text-blue-600'>Proyectos</a></li>
+      <li><a href='#contact' class='hover:text-blue-600'>Contacto</a></li>
+    </ul>
+
+    <!-- Botón móvil -->
+    <button
+      id='menu-toggle'
+      class='md:hidden text-gray-700 text-2xl focus:outline-none'
+    >
+      ☰
+    </button>
+  </nav>
+
+  <!-- Menú móvil -->
+  <div
+    id='mobile-menu'
+    class='hidden flex-col absolute top-16 left-0 w-full bg-white shadow-lg md:hidden transition-all duration-300'
+  >
+    <a
+      href='#services'
+      class='block py-3 px-6 border-b hover:bg-gray-100 hover:text-blue-600'
+      >Servicios</a
+    >
+    <a
+      href='#feature'
+      class='block py-3 px-6 border-b hover:bg-gray-100 hover:text-blue-600'
+      >Características</a
+    >
+    <a
+      href='#about'
+      class='block py-3 px-6 border-b hover:bg-gray-100 hover:text-blue-600'
+      >Sobre Nosotros</a
+    >
+    <a
+      href='#project'
+      class='block py-3 px-6 border-b hover:bg-gray-100 hover:text-blue-600'
+      >Proyectos</a
+    >
+    <a
+      href='#contact'
+      class='block py-3 px-6 hover:bg-gray-100 hover:text-blue-600'>Contacto</a
+    >
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</header>
