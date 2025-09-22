@@ -1,32 +1,38 @@
 [
   {
     "name": "Blog de Café",
-    "description": "En este blog se pueden encontrar recetas, tips y recomendaciones para disfrutar de una buena taza de café. El sitio está disponible, pero no está terminada la parte de más información debido a que el cliente aún no la desea.",
-    "image": "/images/blogCafe.png",
+    "description": "En este blog se pueden encontrar recetas, tips y recomendaciones para disfrutar de una buena taza de café. El sitio está disponible, pero nosotros solo nos encargamos de la plantilla y el diseño.",
+    "image": "/images/blogCafe.webp",
     "url": "https://anacristinasilvasolis.github.io/BLOG_CAFE/"
   },
   {
     "name": "Kaliman Barber",
     "description": "Sitio web de una barbería, donde se pueden encontrar los servicios que ofrecen, así como la ubicación y horarios.",
-    "image": "/images/kaliman.png",
+    "image": "/images/kaliman.webp",
     "url": "https://sark-kb.netlify.app/"
   },
   {
     "name": "prestApp",
     "description": "Plataforma de préstamos, donde los usuarios pueden solicitar préstamos y los prestamistas pueden aceptarlos o rechazarlos. Nos encontramos en la fase de desarrollo, por lo que no se puede acceder a la plataforma.",
-    "image": "/images/enConstruccion.png",
+    "image": "/images/enConstruccion.webp",
     "url": "https://anacristinasilvasolis.github.io/"
   },
   {
     "name": "SkillFinder",
     "description": "Plataforma de multiservicios, donde los usuarios pueden encontrar servicios de diferentes categorías, como limpieza, jardinería, reparaciones, entre otros. Nos encontramos en la fase de desarrollo, por lo que no se puede acceder a la plataforma.",
-    "image": "/images/enConstruccion.png",
+    "image": "/images/enConstruccion.webp",
     "url": "https://anacristinasilvasolis.github.io/"
   },
   {
     "name": "Restaurante La Casa de la Abuela",
     "description": "Plataforma para un restaurante, donde los usuarios pueden ver el menú, hacer reservas y pedir comida a domicilio. Nos encontramos en la fase de desarrollo, por lo que no se puede acceder a la plataforma.",
-    "image": "/images/enConstruccion.png",
+    "image": "/images/enConstruccion.webp",
     "url": "https://anacristinasilvasolis.github.io/"
+  },
+  {
+    "name": "Plataforma de cursos online",
+    "description": "Plataforma para cursos online, donde los usuarios pueden ver los cursos disponibles, inscribirse y acceder al contenido. El sitio está disponible y funcional, los usuarios pueden solicitar más información a través del formulario de contacto o whatsapp.",
+    "image": "/images/cursoJava.webp",
+    "url": "https://codecollectivecursos.netlify.app/"
   }
 ]
