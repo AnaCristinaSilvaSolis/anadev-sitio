@@ -1,30 +1,51 @@
 ---
-import projects from "../../config/projects.json";
+import projects from '../../config/projects.json';
 ---
 
-<h2 class="font-bold text-5xl my-5 text-center" id="project">Proyectos</h2>
-<section class="grid md:grid-cols-3 gap-4 p-4">
-  {
-    projects.map((project) => (
-      <div class="max-w-sm flex flex-col justify-between rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-300 hover:scale-105 hover:shadow-2xl mb-5">
-        <div>
-          <img class="w-full h-auto" src={project.image} alt={project.name} />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">{project.name}</div>
-            <p class="text-gray-700 text-base">{project.description}</p>
+<section class='py-20 bg-background' id='project'>
+  <div class='container mx-auto px-6'>
+    <h2 class='font-bold text-5xl mb-4 text-center text-foreground'>
+      Proyectos
+    </h2>
+    <p
+      class='text-center text-muted-foreground text-lg mb-16 max-w-2xl mx-auto'
+    >
+      Descubre algunos de los proyectos que hemos desarrollado para nuestros
+      clientes.
+    </p>
+
+    <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto'>
+      {
+        projects.map((project) => (
+          <div class='bg-card rounded-2xl overflow-hidden shadow-lg border border-border transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col'>
+            <div class='flex-1'>
+              <img
+                class='w-full h-48 object-cover'
+                src={project.image || '/placeholder.svg'}
+                alt={project.name}
+              />
+              <div class='p-6'>
+                <h3 class='font-bold text-xl mb-3 text-foreground'>
+                  {project.name}
+                </h3>
+                <p class='text-muted-foreground leading-relaxed'>
+                  {project.description}
+                </p>
+              </div>
+            </div>
+            <div class='p-6 pt-0 mt-auto'>
+              <a
+                target='_blank'
+                rel='noopener noreferrer'
+                href={project.url}
+                class='inline-block bg-accent hover:bg-accent/90 rounded-lg px-4 py-2 text-sm font-semibold text-accent-foreground transition-all duration-200 hover:scale-105'
+              >
+                Ir al sitio
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="px-6 pt-4 pb-6 mt-auto">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={project.url}
-            class="inline-block bg-blue-900 hover:bg-blue-600 rounded-full px-3 py-1 text-sm font-semibold text-white"
-          >
-            Ir al sitio
-          </a>
-        </div>
-      </div>
-    ))
-  }
+        ))
+      }
+    </div>
+  </div>
 </section>

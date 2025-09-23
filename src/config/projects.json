@@ -15,19 +15,13 @@
     "name": "prestApp",
     "description": "Plataforma de préstamos, donde los usuarios pueden solicitar préstamos y los prestamistas pueden aceptarlos o rechazarlos. Nos encontramos en la fase de desarrollo, por lo que no se puede acceder a la plataforma.",
     "image": "/images/enConstruccion.webp",
-    "url": "https://anacristinasilvasolis.github.io/"
-  },
-  {
-    "name": "SkillFinder",
-    "description": "Plataforma de multiservicios, donde los usuarios pueden encontrar servicios de diferentes categorías, como limpieza, jardinería, reparaciones, entre otros. Nos encontramos en la fase de desarrollo, por lo que no se puede acceder a la plataforma.",
-    "image": "/images/enConstruccion.webp",
-    "url": "https://anacristinasilvasolis.github.io/"
+    "url": "https://github.com/AnaCristinaSilvaSolis"
   },
   {
     "name": "Restaurante La Casa de la Abuela",
     "description": "Plataforma para un restaurante, donde los usuarios pueden ver el menú, hacer reservas y pedir comida a domicilio. Nos encontramos en la fase de desarrollo, por lo que no se puede acceder a la plataforma.",
     "image": "/images/enConstruccion.webp",
-    "url": "https://anacristinasilvasolis.github.io/"
+    "url": "https://github.com/AnaCristinaSilvaSolis"
   },
   {
     "name": "Plataforma de cursos online",

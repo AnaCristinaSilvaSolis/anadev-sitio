@@ -1,50 +1,67 @@
-<section id='contact'>
-  <h2 class='text-center font-bold text-5xl my-10'>Contacto</h2>
-  <form
-    name='contact'
-    method='POST'
-    data-netlify='true'
-    class='max-w-lg mx-auto p-6 shadow-lg rounded-lg mb-10 form-class'
-  >
-    <input type='hidden' name='form-name' value='contact' />
-
-    <div class='mb-4'>
-      <label for='name' class='block text-gray-700'>Nombre</label>
-      <input
-        type='text'
-        id='name'
-        name='name'
-        required
-        class='w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900'
-      />
-    </div>
-
-    <div class='mb-4'>
-      <label for='email' class='block text-gray-700'>Correo Electrónico</label>
-      <input
-        type='email'
-        id='email'
-        name='email'
-        required
-        class='w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900'
-      />
-    </div>
-
-    <div class='mb-4'>
-      <label for='message' class='block text-gray-700'>Mensaje</label>
-      <textarea
-        id='message'
-        name='message'
-        rows='4'
-        required
-        class='w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900'
-      ></textarea>
-    </div>
-
-    <button
-      type='submit'
-      class='bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-600'
-      >Enviar</button
+<section id='contact' class='py-20 light-section'>
+  <div class='container mx-auto px-6'>
+    <h2 class='text-center font-bold text-5xl mb-4 text-light-foreground'>
+      Contacto
+    </h2>
+    <p
+      class='text-center text-light-muted-foreground text-lg mb-12 max-w-2xl mx-auto'
     >
-  </form>
+      ¿Tienes un proyecto en mente? Nos encantaría escuchar tus ideas y ayudarte
+      a hacerlas realidad.
+    </p>
+
+    <form
+      name='contact'
+      method='POST'
+      data-netlify='true'
+      class='max-w-lg mx-auto p-8 shadow-xl rounded-2xl bg-white border border-gray-200'
+    >
+      <input type='hidden' name='form-name' value='contact' />
+
+      <div class='mb-6'>
+        <label for='name' class='block text-gray-700 font-medium mb-2'
+          >Nombre</label
+        >
+        <input
+          type='text'
+          id='name'
+          name='name'
+          required
+          class='w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all'
+        />
+      </div>
+
+      <div class='mb-6'>
+        <label for='email' class='block text-gray-700 font-medium mb-2'
+          >Correo Electrónico</label
+        >
+        <input
+          type='email'
+          id='email'
+          name='email'
+          required
+          class='w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all'
+        />
+      </div>
+
+      <div class='mb-6'>
+        <label for='message' class='block text-gray-700 font-medium mb-2'
+          >Mensaje</label
+        >
+        <textarea
+          id='message'
+          name='message'
+          rows='5'
+          required
+          class='w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all resize-none'
+        ></textarea>
+      </div>
+
+      <button
+        type='submit'
+        class='w-full bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-all duration-200 hover:scale-105 shadow-lg'
+        >Enviar Mensaje</button
+      >
+    </form>
+  </div>
 </section>

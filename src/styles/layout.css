@@ -1,14 +1,53 @@
 @import "tailwindcss";
-@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@theme inline {
+  --color-background: #0a0a0a;
+  --color-foreground: #ffffff;
+  --color-card: #1a1a1a;
+  --color-card-foreground: #ffffff;
+  --color-primary: #22c55e;
+  --color-primary-foreground: #000000;
+  --color-secondary: #262626;
+  --color-secondary-foreground: #ffffff;
+  --color-muted: #171717;
+  --color-muted-foreground: #a3a3a3;
+  --color-accent: #22c55e;
+  --color-accent-foreground: #000000;
+  --color-border: #262626;
+  --color-input: #1a1a1a;
+  --color-ring: #22c55e;
+
+
+  --color-light-background: #fafafa;
+  --color-light-foreground: #0a0a0a;
+  --color-light-muted: #f5f5f5;
+  --color-light-muted-foreground: #737373;
+}
+
 
 body {
-  background-color: #d5d0d0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
+
 .form-class {
-  box-shadow: #1c398e 0px 0px 10px;
+  box-shadow: var(--color-accent) 0px 0px 10px;
+  background-color: var(--color-card);
 }
+
 
 html {
   scroll-behavior: smooth;
+}
+
+
+.light-section {
+  background-color: var(--color-light-background);
+  color: var(--color-light-foreground);
+}
+
+.light-section .text-muted-foreground {
+  color: var(--color-light-muted-foreground);
 }

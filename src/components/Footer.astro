@@ -2,66 +2,100 @@
 const year = new Date().getFullYear();
 ---
 
-<footer class="bg-blue-900 text-white py-8">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-4 gap-8 text-center md:text-left">
-      <!-- Logo y descripción -->
+<!-- Updated footer with new professional color scheme -->
+<footer class='bg-secondary text-foreground py-12 border-t border-border'>
+  <div class='container mx-auto px-6'>
+    <div class='grid md:grid-cols-4 gap-8 text-center md:text-left'>
+      <!-- Updated logo and description colors -->
       <div>
-        <h2 class="text-2xl font-bold">Anadev</h2>
-        <p class="mt-2 text-white">Desarrollo de software a tu medida.</p>
+        <h2 class='text-2xl font-bold text-accent'>Anadev</h2>
+        <p class='mt-2 text-muted-foreground'>
+          Desarrollo de software a tu medida.
+        </p>
       </div>
 
       <div>
-        <ul class="mt-2 space-y-2">
+        <ul class='mt-2 space-y-2'>
           <li>
-            <a href="#hero" class="hover:text-blue-400">Inicio</a>
+            <a
+              href='#hero'
+              class='text-muted-foreground hover:text-accent transition-colors'
+              >Inicio</a
+            >
           </li>
           <li>
-            <a href="#services" class="hover:text-blue-400">Servicios</a>
+            <a
+              href='#services'
+              class='text-muted-foreground hover:text-accent transition-colors'
+              >Servicios</a
+            >
           </li>
           <li>
-            <a href="#feature" class="hover:text-blue-400">Características</a>
+            <a
+              href='#feature'
+              class='text-muted-foreground hover:text-accent transition-colors'
+              >Características</a
+            >
           </li>
         </ul>
       </div>
       <div>
-        <ul class="mt-2 space-y-2">
+        <ul class='mt-2 space-y-2'>
           <li>
-            <a href="#about" class="hover:text-blue-400">Sobre Nosotros</a>
+            <a
+              href='#about'
+              class='text-muted-foreground hover:text-accent transition-colors'
+              >Sobre Nosotros</a
+            >
           </li>
           <li>
-            <a href="#project" class="hover:text-blue-400">Proyectos</a>
+            <a
+              href='#project'
+              class='text-muted-foreground hover:text-accent transition-colors'
+              >Proyectos</a
+            >
           </li>
           <li>
-            <a href="#contact" class="hover:text-blue-400">Contacto</a>
+            <a
+              href='#testimonials'
+              class='text-muted-foreground hover:text-accent transition-colors'
+              >Testimonios</a
+            >
+          </li>
+          <li>
+            <a
+              href='#contact'
+              class='text-muted-foreground hover:text-accent transition-colors'
+              >Contacto</a
+            >
           </li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-lg font-semibold">Síguenos</h3>
-        <div class="flex justify-center md:justify-start space-x-4 mt-2">
+        <h3 class='text-lg font-semibold text-foreground'>Síguenos</h3>
+        <div class='flex justify-center md:justify-start space-x-4 mt-2'>
           <a
-            href="https://www.linkedin.com/in/ana-cristina-silva-solis-3765081ab/"
-            target="_blank"
-            class="text-gray-400 hover:text-blue-400"
+            href='https://www.linkedin.com/in/ana-cristina-silva-solis-3765081ab/'
+            target='_blank'
+            class='text-muted-foreground hover:text-accent transition-colors'
           >
-            <i class="fa-brands fa-linkedin text-2xl"></i>
+            <i class='fa-brands fa-linkedin text-2xl'></i>
           </a>
           <a
-            href="https://github.com/AnaCristinaSilvaSolis"
-            target="_blank"
-            class="text-gray-400 hover:text-blue-400"
+            href='https://github.com/AnaCristinaSilvaSolis'
+            target='_blank'
+            class='text-muted-foreground hover:text-accent transition-colors'
           >
-            <i class="fab fa-github text-2xl"></i>
+            <i class='fab fa-github text-2xl'></i>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- Línea separadora -->
-    <div class="border-t border-white mt-6 pt-4 text-center">
-      <p class="text-white">
+    <!-- Updated separator and copyright with new colors -->
+    <div class='border-t border-border mt-8 pt-6 text-center'>
+      <p class='text-muted-foreground'>
         &copy; {year} Anadev. Todos los derechos reservados.
       </p>
     </div>

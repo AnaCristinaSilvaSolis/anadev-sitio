@@ -1,0 +1,49 @@
+---
+import testimonials from '../../config/testimonials.json';
+---
+
+<section id='testimonials' class='py-20 bg-background'>
+  <div class='container mx-auto px-6'>
+    <h2 class='text-center font-bold text-5xl mb-4 text-foreground'>
+      Lo que dicen nuestros clientes
+    </h2>
+    <p
+      class='text-center text-muted-foreground text-lg mb-16 max-w-2xl mx-auto'
+    >
+      La confianza de nuestros clientes es nuestro mayor logro. Descubre cómo
+      hemos transformado sus negocios.
+    </p>
+
+    <div class='grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto'>
+      {
+        testimonials.map((testimonial) => (
+          <div class='bg-card p-8 rounded-2xl shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:scale-105'>
+            <div class='flex items-center mb-6'>
+              <div>
+                <h3 class='font-semibold text-lg text-foreground'>
+                  {testimonial.name}
+                </h3>
+                <p class='text-muted-foreground text-sm'>
+                  {testimonial.position}
+                </p>
+                <p class='text-accent font-medium text-sm'>
+                  {testimonial.company}
+                </p>
+              </div>
+            </div>
+
+            <div class='flex mb-4'>
+              {Array.from({ length: testimonial.rating }, (_, i) => (
+                <i class='fa-solid fa-star text-accent text-sm' />
+              ))}
+            </div>
+
+            <blockquote class='text-muted-foreground leading-relaxed italic'>
+              "{testimonial.testimonial}"
+            </blockquote>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

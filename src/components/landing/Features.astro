@@ -1,24 +1,44 @@
 ---
-import features from "../../config/features.json";
+import features from '../../config/features.json';
 ---
 
-<h2 class="text-center font-bold text-5xl m-10" id="feature">
-  Características
-</h2>
-<div class="grid md:grid-cols-3 gap-4 p-4">
-  {
-    features.map((feature) => (
-      <dl>
-        <div class="relative pl-16">
-          <dt class="text-base/7 font-semibold text-gray-900">
-            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-blue-900">
-              <i class="fa-solid fa-code text-white" />
+<section class='light-section py-20'>
+  <div class='container mx-auto px-6'>
+    <h2
+      class='text-center font-bold text-5xl mb-4 text-light-foreground'
+      id='feature'
+    >
+      Características
+    </h2>
+    <p
+      class='text-center text-light-muted-foreground text-lg mb-16 max-w-2xl mx-auto'
+    >
+      Nuestro enfoque integral garantiza que cada proyecto cumpla con los más
+      altos estándares de calidad.
+    </p>
+
+    <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto'>
+      {
+        features.map((feature) => (
+          <div class='bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300'>
+            <div class='flex items-start'>
+              <div class='flex-shrink-0 mr-4'>
+                <div class='flex size-12 items-center justify-center rounded-lg bg-accent'>
+                  <i class='fa-solid fa-code text-accent-foreground text-lg' />
+                </div>
+              </div>
+              <div>
+                <h3 class='text-lg font-semibold text-gray-900 mb-2'>
+                  {feature.title}
+                </h3>
+                <p class='text-gray-600 leading-relaxed'>
+                  {feature.description}
+                </p>
+              </div>
             </div>
-            {feature.title}
-          </dt>
-          <dd class="mt-2 text-base/7 text-gray-600">{feature.description}</dd>
-        </div>
-      </dl>
-    ))
-  }
-</div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

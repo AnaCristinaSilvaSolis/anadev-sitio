@@ -1,0 +1,23 @@
+[
+  {
+    "name": "María González",
+    "position": "CEO",
+    "company": "Bloggueando con café",
+    "testimonial": "Anadev transformó completamente nuestra presencia digital. Su enfoque profesional y atención al detalle superaron nuestras expectativas. La plantilla web que desarrollaron ha aumentado nuestra presencia en un 100%.",
+    "rating": 5
+  },
+  {
+    "name": "Oscar Riascos",
+    "position": "Propietario",
+    "company": "Kaliman Barber",
+    "testimonial": "El equipo de Anadev fue increíble desde el principio hasta el final. Captaron nuestra visión y la tradujeron en un sitio web funcional y atractivo. Hemos recibido numerosos comentarios positivos de nuestros clientes.",
+    "rating": 5
+  },
+  {
+    "name": "Sofía Martínez",
+    "position": "Gerente de Marketing",
+    "company": "Cursos Code Collective",
+    "testimonial": "Trabajar con Anadev ha sido una experiencia fantástica. Su creatividad y profesionalismo se reflejan en cada aspecto del sitio web que crearon para nosotros. Ha sido una herramienta clave para atraer nuevos estudiantes.",
+    "rating": 5
+  }
+]
